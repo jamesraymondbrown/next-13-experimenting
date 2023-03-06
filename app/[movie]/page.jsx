@@ -17,11 +17,13 @@ export default async function MovieDetail({ params }) {
           {res.status}
         </h2>
         <Image
-          className="my-12"
+          className="my-12 w-full"
           src={imagePath + res.backdrop_path}
           width="1000"
           height="1000"
+          priority
         />
+        <p>{res.overview}</p>
       </div>
     </div>
   );
