@@ -15,19 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className}`}>
-        <nav>
-          <ul>
-            <li>
-              <a href="/about">About</a>
-            </li>
-            <li>
-              <a href="/about">Sign up!</a>
-            </li>
-          </ul>
-        </nav>
-        {children}
-      </body>
+      <body className={`${montserrat.className} mx-24 my-12`}>{children}</body>
     </html>
   );
 }

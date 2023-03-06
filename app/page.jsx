@@ -10,7 +10,6 @@ export default async function Home() {
   console.log(res);
   return (
     <main>
-      <h1 className="">Hello world 🔥</h1>
       <div className="grid gap-16 grid-cols-fluid">
         {res.results.map((movie) => (
           <div>
