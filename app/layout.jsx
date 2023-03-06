@@ -1,4 +1,11 @@
 import "./globals.css";
+import { Montserrat, Poppins } from "@next/font/google";
+
+const montserrat = Montserrat({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+});
 
 export const metadata = {
   title: "Jimmy's testing app",
@@ -8,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${montserrat.className}`}>
         <nav>
           <ul>
             <li>
